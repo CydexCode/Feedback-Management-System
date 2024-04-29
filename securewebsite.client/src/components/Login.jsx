@@ -8,7 +8,7 @@ function Login() {
     useEffect(() => {
         const user = localStorage.getItem("user");
         if (user) {
-            document.location = "/";
+            document.location = "/Login";
         }
     }, []);
 

@@ -29,7 +29,7 @@ function ProtectedRoutes() {
     return waiting ? <div className="waiting-page">
         <div>Waiting...</div>
     </div> :
-        isLogged ? <Outlet /> : <Navigate to="/login" />;
+        isLogged ? <Outlet /> : <Navigate to="/home" />;
 }
 
 export default ProtectedRoutes;

@@ -15,19 +15,11 @@ const router = createBrowserRouter(
             </Route>
             <Route path='/login' element={<Login />} />
             <Route path='/register' element={<Register />} />
-            <Route path='*' element={
-                <div>
-                    <header>
-                        <h1>Not Found</h1>
-                    </header>
-                    <p>
-                        <a href="/">Back to Home</a>
-                    </p>
-                </div>
-            } />
+            <Route path='*' element= {<Home />}/>
         </Route>
     )
 );
+
 function App() {
     const isLogged = localStorage.getItem("user");
     const logout = async () => {
@@ -47,25 +39,29 @@ function App() {
             console.log("could not logout: ", response);
         }
     };
-    return (
-        <section>
-            <div className='top-nav'>
-                {
-                    isLogged ?
-                        <span className='item-holder'>
-                            <a href="/">Home</a>
-                            <a href="/admin">Admin</a>
-                            <span onClick={logout}>Log Out</span>
-                        </span> :
-                        <span className='item-holder'>
-                            <a href="/login">Login</a>
-                            <a href="/register">Register</a>
-                        </span>
-                }
-            </div>
 
-            <RouterProvider router={router} />
-        </section>
+    return (
+        <div>
+            <nav className='top-nav'>
+                <div className='item-holder'>
+                    <a href="/">Home</a>
+                    <a href="/admin">Admin</a>
+                    {isLogged && <a href="/admin">Admin</a>}
+                </div>
+                {/* <div className='item-holder'>
+                    {isLogged ? <span onClick={logout}>Log Out</span> : <a href="/login">Login</a>}
+                    {!isLogged && <a href="/register">Register</a>}
+                </div> */}
+            </nav>
+
+            <section className="main-content">
+                <RouterProvider router={router} />
+            </section>
+
+            <footer className="footer">
+                <p>&copy; Student Feedback Management System</p>
+            </footer>
+        </div>
     );
 }
 
