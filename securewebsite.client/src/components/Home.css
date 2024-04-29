@@ -22,17 +22,20 @@ header {
     flex-direction: column;
 }
 
-.login-register-buttons a {
+.login-register-buttons button {
     display: block;
-    padding: 10px 20px;
+    padding: 15px 30px; /* Increased padding for larger buttons */
     margin-bottom: 10px;
     background-color: #007bff;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform transition */
 }
 
-.login-register-buttons a:hover {
+.login-register-buttons:hover {
     background-color: #0056b3;
+    transform: scale(1.5); /* Scale the button on hover */
 }

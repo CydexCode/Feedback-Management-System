@@ -45,13 +45,12 @@ function App() {
             <nav className='top-nav'>
                 <div className='item-holder'>
                     <a href="/">Home</a>
-                    <a href="/admin">Admin</a>
                     {isLogged && <a href="/admin">Admin</a>}
                 </div>
-                {/* <div className='item-holder'>
+                <div className='item-holder'>
                     {isLogged ? <span onClick={logout}>Log Out</span> : <a href="/login">Login</a>}
-                    {!isLogged && <a href="/register">Register</a>}
-                </div> */}
+                    {/* {!isLogged && <a href="/register">Register</a>} */}
+                </div>
             </nav>
 
             <section className="main-content">
