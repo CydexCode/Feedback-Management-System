@@ -1,6 +1,6 @@
 console.log("Hello World!")
 import React from 'react';
-import './App.css'; // Assuming you have an App.css file for styling
+import './App.css'; 
 
 const App = ({ userName }) => {
     return (
@@ -34,10 +34,7 @@ const App = ({ userName }) => {
                 </div>
                 <button type="submit">Submit</button>
             </form>
-            <div className="profile-section">
-                {/* Profile section content goes here */}
-                {/* You can add profile information dynamically */}
-            </div>
+            
             <div className="button-section">
                 <button className="edit-button">Edit</button>
                 <button className="remove-button">Remove</button>
