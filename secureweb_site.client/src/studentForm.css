@@ -1,0 +1,103 @@
+/* Styles specific to the StudentForm component */
+.student-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.student-form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+    .form-group label {
+        width: 120px; /* Set width for labels */
+        text-align: right; /* Align labels to the right */
+        margin-right: 20px; /* Add space between labels and inputs */
+    }
+
+    .form-group input {
+        flex: 1; /* Take remaining width */
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+.profile-section {
+    /* Add profile section styles */
+}
+
+.button-section {
+    margin-top: 20px;
+}
+
+.edit-button {
+    margin-right: 10px;
+}
+
+.remove-button {
+    background-color: #dc3545;
+}
+
+    .remove-button:hover {
+        background-color: #c82333;
+    }
+
+/* Styles specific to the App component */
+.app-container {
+    text-align: center;
+}
+
+.app-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .app-logo {
+        animation: app-logo-spin infinite 20s linear;
+    }
+}
+
+.app-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.app-link {
+    color: #61dafb;
+}
+
+@keyframes app-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
