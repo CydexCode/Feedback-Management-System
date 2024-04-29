@@ -14,7 +14,7 @@ function Home() {
             setUserInfo(data.userInfo);
             console.log("user info: ", data.userInfo);
         }).catch(error => {
-            console.log("Error home page: ", error);
+            console.log("Error home page : ", error);
         });
     }, []);
 
