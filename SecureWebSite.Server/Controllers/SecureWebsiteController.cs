@@ -120,7 +120,7 @@ namespace SecureWebSite.Server.Controllers
 										return Forbid();
 								}
 						} catch (Exception ex) {
-			         return BadRequest(new {message = "Something went wrong please try again. " + ex.Message });
+			         return BadRequest(new {message = "Something went wrong please try again!. " + ex.Message });
 						}
 
 						return Ok(new {message = "Logged in", user = currentuser});
