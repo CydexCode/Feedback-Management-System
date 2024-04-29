@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecureWebSite.Server", "SecureWebSite.Server\SecureWebSite.Server.csproj", "{2C82BB2C-713C-4BC0-8F1C-8D25A8E665C5}"
 EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "securewebsite.client", "SecureWebSite.Client\securewebsite.client.esproj", "{62219C0C-6ABC-408E-9D3A-768D87D7626C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,12 @@ Global
 		{2C82BB2C-713C-4BC0-8F1C-8D25A8E665C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C82BB2C-713C-4BC0-8F1C-8D25A8E665C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C82BB2C-713C-4BC0-8F1C-8D25A8E665C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62219C0C-6ABC-408E-9D3A-768D87D7626C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62219C0C-6ABC-408E-9D3A-768D87D7626C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62219C0C-6ABC-408E-9D3A-768D87D7626C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{62219C0C-6ABC-408E-9D3A-768D87D7626C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62219C0C-6ABC-408E-9D3A-768D87D7626C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62219C0C-6ABC-408E-9D3A-768D87D7626C}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
